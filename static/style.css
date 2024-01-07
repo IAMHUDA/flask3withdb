@@ -1,0 +1,26 @@
+body {
+    /* display: grid;
+    justify-content: center; */
+    padding: 20px;
+    background-color: #d1eee3;
+    height: 100vh;
+}
+
+body h1 {
+    text-align: center;
+}
+body form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background-color: #c8d0ce;
+    padding: 20px;
+    border-radius: 10px; /* Tambahkan margin atas dan bawah */
+}
+
+body .container {
+    display: grid;
+    justify-content: space-around;
+    padding: 7px;
+    color: black;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Student List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>PIN</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row['nm'] }}</td>
+            <td>{{ row['add'] }}</td>
+            <td>{{ row['city'] }}</td>
+            <td>{{ row['pin'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go back to Home</a>
+</body>
+</html>
